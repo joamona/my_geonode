@@ -10,12 +10,12 @@ sudo docker volume rm my_geonode-rabbitmq
 sudo docker volume rm my_geonode-statics
 sudo docker volume rm my_geonode-tmp
 sudo docker volume rm my_geonode_jenkins_data
-sudo docker rmi my_geonode_django
-sudo docker rmi geonode/nginx
-sudo docker rmi geonode/letsencrypt
-sudo docker rmi geonode/geoserver
-sudo docker rmi geonode/geoserver_data
-sudo docker rmi geonode/postgis
-sudo docker rmi rabbitmq
-sudo docker rmi jenkins/jenkins
+sudo docker rmi my_geonode_django:4.0
+sudo docker rmi geonode/nginx:4.0
+sudo docker rmi geonode/letsencrypt:4.0
+sudo docker rmi geonode/geoserver:2.20.7
+sudo docker rmi geonode/geoserver_data:2.20.7
+sudo docker rmi geonode/postgis:13
+sudo docker rmi rabbitmq:3.7-alpine
+sudo docker rmi jenkins/jenkins:2.164-jdk11
 
